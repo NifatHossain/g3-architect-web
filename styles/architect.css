@@ -123,7 +123,26 @@ nav h2{
     font-size: 16px;
     font-weight: 400;
 }
-
+.fact-boxs{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #FF900E;
+    padding: 54px;
+}
+.facts-title{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+.box-title{
+    color:  #424242;
+    font-size: 45px;
+    font-weight: 600;
+}
 @media screen and (max-width:576px) {
     nav{
         flex-direction: column;
@@ -153,6 +172,11 @@ nav h2{
         
     
     }
+    .fact-boxs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
 }
 @media screen and (min-width:576.1px) and (max-width:960px){
     nav{
@@ -178,5 +202,10 @@ nav h2{
         padding-right: 10px;
         
     
+    }
+    .fact-boxs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
     }
 }
