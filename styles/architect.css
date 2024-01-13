@@ -24,6 +24,7 @@ button{
     font-size: 20px;
     font-weight: 600;
     border: 0;
+    margin-bottom: 30px;
 }
 
 header{
@@ -148,6 +149,74 @@ nav h2{
     display: flex;
     justify-content: space-between;
 }
+.experiance{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.experiance-title{
+    color:  #131313;
+    font-size: 45px;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.card-title{
+    color:  #131313;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.card-image{
+    height: 90%;
+    margin-left: 70px;
+}
+.exp-badge{
+    border-radius: 8px;
+    background-color: #FF900E;
+    padding: 0;
+    width: 332px;
+    height: 170px;
+    position: relative;
+    top: -200px;
+    left: 30px;
+   
+}
+.badge-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0;
+    /* margin: 5px; */
+}
+.badge-small{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.foot{
+    border-radius: 8px;
+    background: #FFF4E7;
+}
+.copyright{
+    color: #424242;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 38px 410px;
+}
+
 @media screen and (max-width:576px) {
     nav{
         flex-direction: column;
@@ -182,6 +251,27 @@ nav h2{
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
     }
+    .box{
+        padding: 10px;
+    }
+    .sponsor-images{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr) ;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright {
+
+        padding: 10px 10px;
+    }
+    .experiance{
+        flex-direction: column;
+    }
+    .card-image{
+        width: 87%;
+        
+    }
 }
 @media screen and (min-width:576.1px) and (max-width:960px){
     nav{
@@ -212,5 +302,11 @@ nav h2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
+    }
+    .copyright {
+        padding: 28px 10px;
+    }
+    .experiance{
+        flex-direction: column;
     }
 }
