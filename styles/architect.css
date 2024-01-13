@@ -5,8 +5,8 @@
     
 }
 main{
-    width:1440px;
-    margin: 0 auto;
+    max-width:1440px;
+    margin: 70px auto;
 }
 a{
     cursor: pointer;
@@ -139,6 +139,20 @@ nav h2{
         width:100%;
         margin: 10px 0px;
     }
+    .feature{
+        flex-direction: column;
+    }
+    .feature-images{
+        grid-template-columns: 1fr;
+       
+    }
+    .feature-content{
+        /* width: 50%; */
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    
+    }
 }
 @media screen and (min-width:576.1px) and (max-width:960px){
     nav{
@@ -154,5 +168,15 @@ nav h2{
     .banner  img{
         width:100%;
         margin: 10px 0px;
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .feature-content{
+        /* width: 50%; */
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    
     }
 }
