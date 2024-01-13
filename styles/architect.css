@@ -4,6 +4,10 @@
     font-family: 'Work Sans', sans-serif;
     
 }
+main{
+    width:1440px;
+    margin: 0 auto;
+}
 a{
     cursor: pointer;
 }
@@ -23,7 +27,8 @@ button{
 }
 
 header{
-    background-color:rgba(255, 144, 14, 0.10);;
+    background-color:rgba(255, 144, 14, 0.10);
+    margin-bottom: 30px;
 }
 nav{
     display: flex;
@@ -67,11 +72,57 @@ nav h2{
     font-weight: 700;
 }
 .banner  img{
-    width: 1000px;
-    margin: 50px 240px;
+    /* width: 1000px; */
+    margin-bottom: 20px;
+    /* margin: 50px 240px; */
+    
 }
+.feature{
+    display: flex;
+    /* margin: 20px auto; */
+    justify-content: space-between;
+    /* width: 80%; */
+    align-items: center;
+    
+}
+.feature-images{
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* width: 50%; */
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 20px;
+}
+.feature-images img{
+    /* width: 40%; */
+}
+.feature-content{
+    /* width: 50%; */
+    padding-left: 70px;
+    padding-right: 70px;
+    
 
-
+}
+.part1{
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+.part2{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+.part3{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+.feature-des{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
 
 @media screen and (max-width:576px) {
     nav{
