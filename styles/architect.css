@@ -2,10 +2,17 @@
 
 *{
     font-family: 'Work Sans', sans-serif;
+    
+}
+a{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
 }
 .btn-pri{
-    width: 180px;
-    height: 64px;
+    
+    padding: 15px 25px;
     border-radius: 8px;
     background: #FF900E;
     color: #FFF;
@@ -62,4 +69,39 @@ nav h2{
 .banner  img{
     width: 1000px;
     margin: 50px 240px;
+}
+
+
+
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+        margin: 0;
+    }
+    .banner-content{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .banner  img{
+        width:100%;
+        margin: 10px 0px;
+    }
+}
+@media screen and (min-width:576.1px) and (max-width:960px){
+    nav{
+        flex-direction: column;
+        margin: 0;
+    }
+    .banner-content{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .banner  img{
+        width:100%;
+        margin: 10px 0px;
+    }
 }
